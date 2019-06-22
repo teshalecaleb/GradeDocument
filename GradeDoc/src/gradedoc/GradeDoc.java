@@ -25,7 +25,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
- * @author hp
+ * @author Kaleb Teshale Soft.Ext ATE/8173/09
  */
 public class GradeDoc {
 
@@ -46,10 +46,10 @@ public class GradeDoc {
         driver.findElement(By.xpath("/html/body/div[1]/section/div[2]/div[2]/div[2]/div[2]/form/div[4]/div/button")).click();
         driver.navigate().refresh();
         driver.findElement(By.xpath("//*[@id=\"ml2\"]")).click();
-        // driver.findElement(By.id("m12")).click();
+       
 
         String newout = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]")).getText();
-        // File DestFile= new File("Desktop/grade.doc");
+       
 
       try {
             FileWriter file1 = new FileWriter("MyGrade.doc");
